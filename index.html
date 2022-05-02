@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uprawnienia Linux</title>
+</head>
+
+<body>
+  <div class="app">
+    <header class="py-10 uppercase text-black font-bold w-full text-center">
+      <h1 class="leading-loose text-3xl lg:text-5xl">Uprawnienia plików Linuxa</h1>
+    </header>
+    <div class="w-full flex justify-center items-center gap-20 flex-col">
+
+      <form id="chmod-form">
+
+        <div class="relative overflow-x-auto shadow-md rounded-lg">
+          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs lg:text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                <th scope="col" class="px-3 lg:px-6 py-3">
+
+                </th>
+                <th scope="col" class="px-3 lg:px-6 py-3">
+                  Odczyt
+                </th>
+                <th scope="col" class="px-3 lg:px-6 py-3">
+                  Zapis
+                </th>
+                <th scope="col" class="px-3 lg:px-6 py-3">
+                  Uruchomienie
+                </th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-slate-100 border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row"
+                  class="px-3 lg:px-6 py-4 text-xs lg:text-xl font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                  Właściciel
+                </th>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="owner"
+                    data-value="4">
+                </td>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="owner"
+                    data-value="2">
+                </td>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="owner"
+                    data-value="1">
+                </td>
+              </tr>
+              <tr class="bg-slate-100 border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row"
+                  class="px-3 lg:px-6 py-4 text-xs lg:text-xl font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                  Grupa
+                </th>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="group"
+                    data-value="4">
+                </td>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="group"
+                    data-value="2">
+                </td>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="group"
+                    data-value="1">
+                </td>
+              </tr>
+              <tr class="bg-slate-100 dark:bg-gray-800">
+                <th scope="row"
+                  class="px-3 lg:px-6 py-4 text-xs lg:text-xl font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                  Wszyscy
+                </th>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="everyone"
+                    data-value="4">
+                </td>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="everyone"
+                    data-value="2">
+                </td>
+                <td class="px-3 lg:px-6 py-4">
+                  <input type="checkbox" class="accent-black dark:accent-slate-200	lg:scale-150" data-who="everyone"
+                    data-value="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </form>
+      <p id="result" class="inline-block w-64 font-bold text-3xl lg:text-5xl text-center">chmod 777</p>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+td{
+    text-align: center;
+}
+
+body{
+    background-color: #bdd4e7;
+    background-image: linear-gradient(200deg, #fdfdfdef 0%, #aeb9cf 74%);
+    background-size: cover;
+    min-height: 100vh;
+
+}
