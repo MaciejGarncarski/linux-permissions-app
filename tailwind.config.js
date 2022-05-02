@@ -1,7 +1,7 @@
 module.exports = {
-  mode: "jit", // enable tailwind just in time
+  mode: "jit",
   content: ["./index.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media',
   theme: {
     extend: {},
   },

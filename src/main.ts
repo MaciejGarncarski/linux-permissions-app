@@ -26,9 +26,9 @@ const app = () => {
   }
 
   const updateResult = () => {
-    const result = document.querySelector('#result') as HTMLInputElement;
+    const resultContainer = document.querySelector('#result') as HTMLInputElement;
     const form = document.querySelector('#chmod-form') as HTMLFormElement;
-    const setResult = () => result.textContent = `chmod ${resultSum.join('')}`
+    const setResult = () => resultContainer.textContent = `chmod ${resultSum.join('')}`
     setResult()
     form.addEventListener('change', setResult)
   }
