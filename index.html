@@ -9,9 +9,11 @@
 </head>
 
 <body>
-  <div class="app min-h-screen flex justify-center flex-col">
-    <header class="py-10 uppercase text-black font-bold w-full text-center">
-      <h1 class="leading-loose text-3xl lg:text-5xl">Uprawnienia plików Linuxa</h1>
+  <div class="app min-h-screen flex justify-center items-center flex-col gap-20">
+    <header>
+      <h1 class="bg-slate-200 p-6 rounded-lg font-bold leading-loose text-3xl text-center lg:text-5xl uppercase">
+        Uprawnienia plików Linuxa
+      </h1>
     </header>
     <div class="w-full flex justify-center items-center gap-20 flex-col">
 
@@ -96,7 +98,8 @@
         </div>
 
       </form>
-      <p id="result" class="inline-block w-64 font-bold text-3xl lg:text-5xl text-center">chmod 777</p>
+      <p id="result" class="bg-slate-200 p-6 rounded-lg font-bold text-3xl lg:text-5xl text-center">chmod
+        777</p>
     </div>
   </div>
   <script type="module" src="/src/main.ts"></script>
