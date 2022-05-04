@@ -1,6 +1,8 @@
+## Live 📍
+https://linux-permissions-app.vercel.app/
+
 ## Overview 🎉
 Typescript app, created to learn linux chmod command.
-
 
 ## Tech used 🔧
 - Typescript
@@ -20,6 +22,3 @@ yarn install
 ```
 yarn dev
 ```
-
-## Live 📍
-https://linux-permissions-app.vercel.app/
